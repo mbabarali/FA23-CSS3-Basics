@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: gray;
+  padding: 10px;
+}
+
+body > * {
+  border: solid blue 2px;
+  background-color: aliceblue;
+  height: 5rem;
+}
+
+header {
+  grid-area: header;
+}
+
+/* +++ */
+.featuredimage {
+  grid-area: featuredimage;
+  height: auto;
+}
+
+Nav {
+  grid-area: navigation;
+}
+
+main {
+  height: auto;
+  grid-area: maincontent;
+}
+
+.sideway {
+  grid-area: asidecontent;
+}
+
+.sidewayoptional {
+  grid-area: asidecontentoptional;
+}
+
+footer {
+  grid-area: footerarea;
+}
+
+/* +++++++++++++++++++++++++++++++++++ */
+header {
+  background-color: cornflowerblue;
+  /* height: 5rem; */
+}
+
+nav ul {
+  display: flex;
+  height: 3rem;
+  align-items: center;
+}
+
+nav ul li {
+  list-style-type: none;
+  flex-grow: 1;
+  text-align: center;
+}
+
+nav {
+  /* position: fixed; */
+  /* top: 5rem; */
+  background-color: tomato;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
+
+.imgSection {
+  width: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+main {
+  background-color: aquamarine;
+}
+
+.orderSection {
+  /* position: sticky; */
+  /* top: 200px; */
+  margin: 0 20px;
+}
+
+footer {
+  /* position: fixed;  */
+  /* width: 100%; */
+  /* bottom: 0; */
+  /* left: 0;     */
+  height: 3rem;
+  background-color: cornflowerblue;
+}
+/* +++++++++++++++++++++++++++++++++++ */
+
+.container {
+  display: grid;
+  gap: 5px;
+  grid-template-areas:
+    "header "
+    "navigation "
+    "featuredimage"
+    "maincontent"
+    "asidecontent"
+    "asidecontentoptional"
+    "footerarea";
+}
+
+.sideway {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+  height: auto;
+}
+
+@media (min-width: 500px) {
+  .sideway {
+    height: auto;
+    /* +++ */
+    min-width: 10rem;
+    max-width: 30rem;
+  }
+  .container {
+    display: grid;
+    gap: 5px;
+    grid-template-areas:
+      "header header header header header"
+      ".... navigation navigation asidecontent . "
+      ". featuredimage featuredimage asidecontent ."
+      ". maincontent  maincontent asidecontent ."
+      "asidecontentoptional asidecontentoptional asidecontentoptional asidecontentoptional asidecontentoptional"
+      "footerarea footerarea footerarea footerarea footerarea";
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .sideway,
+  .sidewayoptional {
+    height: auto;
+    /* +++ */
+    min-width: 10rem;
+    max-width: 30rem;
+  }
+
+  .container {
+    display: grid;
+    gap: 5px;
+    grid-template-areas:
+      "header header header header header"
+      "..... asidecontentoptional navigation asidecontent . "
+      "..... asidecontentoptional featuredimage asidecontent ."
+      "..... asidecontentoptional  maincontent asidecontent ."
+      "footerarea footerarea footerarea footerarea footerarea";
+  }
+}

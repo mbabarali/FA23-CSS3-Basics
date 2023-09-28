@@ -1,0 +1,53 @@
+h1,
+p {
+  border: solid black;
+}
+
+span {
+  border: dashed red 3px;
+}
+
+/* [BLOCK ELEMENT] width and height */
+h1 {
+  width: 500px;
+  height: 100px;
+}
+
+p {
+  width: 550px;
+  height: 150px;
+}
+
+/* [BLOCK ELEMENT] All paddings and all margins */
+
+h1 {
+  padding: 3%;
+  margin: 50px;
+}
+
+p {
+  padding: 5%;
+  margin: 60px;
+}
+
+/* [INLINE ELEMENT] width and height */
+span {
+  /* NO Impact */
+  width: 500px;
+  height: 500px;
+}
+
+/* [INLINE ELEMENT] All paddings and aal margins */
+
+span {
+  /* Applied and Respected by browser */
+  padding-left: 50px;
+  padding-right: 50px;
+
+  /* Applied but NOT respected by browser */
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  background-color: aqua;
+  opacity: 0.5;
+}

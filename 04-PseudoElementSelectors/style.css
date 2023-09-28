@@ -1,0 +1,27 @@
+h1::before {
+  content: "First ";
+}
+
+h1::after {
+  content: " End";
+}
+
+p::first-letter {
+  font-size: 40px;
+}
+
+p::first-line {
+  color: blueviolet;
+}
+
+::selection {
+  background-color: aqua;
+}
+
+ol > li::marker {
+  color: orange;
+}
+
+::placeholder {
+  color: brown;
+}

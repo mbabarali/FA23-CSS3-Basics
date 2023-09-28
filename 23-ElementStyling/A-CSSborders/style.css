@@ -1,0 +1,34 @@
+h1 {
+  width: 500px;
+}
+
+.thisisdiv {
+  width: 500px;
+  height: 100px;
+  background-color: turquoise;
+}
+
+.thisisdiv {
+  border-bottom: ridge gray 10px;
+  border-left: navy solid 10px;
+  border-right: navy solid 10px;
+}
+
+.div2 {
+  border-left-color: orange;
+  border-right-color: orange;
+  background-color: rgb(80, 133, 135);
+}
+
+.div3 {
+  border-left-color: green;
+  border-right-color: green;
+  background-color: rgb(26, 157, 239);
+}
+
+.thisiscircle {
+  border: red solid 4px;
+  width: 60px;
+  border-radius: 50%;
+  padding: 45px 25px;
+}

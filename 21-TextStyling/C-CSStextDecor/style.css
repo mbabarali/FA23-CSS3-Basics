@@ -1,0 +1,81 @@
+.mainheading1 {
+  /* text-decoration-line: none; [default] */
+  text-decoration-line: overline;
+  text-decoration-line: underline;
+  text-decoration-line: line-through;
+  text-decoration-line: underline overline;
+
+  /* text-decoration-style: solid; [default] */
+  text-decoration-style: dashed;
+
+  /* As a percentage of 1em in the current font */
+  /* text-decoration-thickness: 5%; */
+  text-decoration-thickness: 4px;
+  /* text-decoration-thickness: auto; */
+  /* text-decoration-thickness: from-font; */
+
+  text-decoration-color: salmon;
+}
+
+.mainheading2 {
+  /* Shorthand */
+  /* text-decoration: underline overline dashed 4px salmon; */
+  /* text-decoration: dashed 4px underline overline salmon; */
+  text-decoration: salmon dashed 4px underline overline;
+  /* text-decoration: salmon overline dashed 4px underline; [ERROR] */
+}
+
+.mainheading3 {
+  /* text-decoration-line: underline; */
+  /* text-decoration: auto underline; */
+  text-decoration: underline;
+
+  /* text-decoration: red; */
+  /* NOTE: text-decoration: red; will not work because 
+             it takes text-decoration-line: none; dafault. */
+
+  /* text-decoration-skip-ink: none; */
+
+  /* As a percentage of 1em in the current font */
+  /* text-underline-offset: 20%; */
+  text-underline-offset: 10px;
+}
+
+.mainheading4 {
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+/* -------------------------------- */
+.mainheading5 {
+  text-emphasis-style: "^";
+  text-emphasis-color: red;
+  /* text-emphasis-position: over; */
+  text-emphasis-position: under;
+}
+
+.mainheading6 {
+  text-emphasis: "^" red;
+  text-emphasis-position: under;
+}
+
+.emphesisChar {
+  text-emphasis-style: "^";
+  text-emphasis-color: red;
+  /* text-emphasis-position: over; */
+  text-emphasis-position: under;
+}
+
+/* -------------------------------- */
+.mainheading8 {
+  /* NOTE:
+        offset-x (required)| offset-y (required)| blur-radius | color 
+        ** offset-x and offset-y are required always. */
+
+  /* text-shadow: 4px 3px 4px red; */
+  text-shadow: 4px 3px red;
+}
+
+.mainheading9 {
+  text-shadow: 4px 3px 1px red, 0 0 0.8em rgb(151, 38, 117);
+}

@@ -1,0 +1,223 @@
+* {
+  /* override defaults */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.thisisdiv {
+  border-bottom: ridge gray 10px;
+  border-left: navy solid 10px;
+  border-right: navy solid 10px;
+  border-top: navy 10px;
+  background-color: rgb(73, 168, 241);
+}
+
+.div2 {
+  border-left-color: orange;
+  border-right-color: orange;
+  background-color: rgb(128, 97, 40);
+}
+
+.div3 {
+  border-left-color: green;
+  border-right-color: green;
+  background-color: rgb(5, 236, 48);
+}
+
+.div4 {
+  border-left-color: rgba(234, 10, 10, 0.8);
+  border-right-color: rgba(234, 10, 10, 0.8);
+  background-color: rgba(244, 96, 96, 0.759);
+}
+
+.thisisdiv {
+  width: 200px;
+  height: 100px;
+}
+
+/* ==================================== */
+/* [Playgroud-Practical] - Start */
+html,
+body {
+  height: 150%;
+  background-color: rgb(152, 152, 134);
+}
+
+.container {
+  width: 90%;
+  height: 90%;
+  border: solid rgb(5, 236, 48);
+}
+
+.container > .filler {
+  height: 3.5%;
+  background-color: orangered;
+}
+
+.divexternal {
+  height: 96.5%;
+}
+
+.divexternal > .filler {
+  height: 3.5%;
+  background-color: orange;
+}
+
+.maindiv {
+  width: 80%;
+  height: 90%;
+  background-color: wheat;
+  margin: 10px auto;
+}
+/* [Playgroud-Practical] - End */
+
+/* ==================================== */
+
+/* 
+.thisisdiv {
+    position: static;  [Default]
+} 
+*/
+
+/* ==================================== */
+
+/*
+-- The .div1 and .div2 (both are fixed)
+will be appear on the next available empty 
+space according to the normal flow in the 
+parent, however these FIXED elements will not 
+occupy or reserve any space in page layout.
+
+-- The .div3 and .div4 (both are static [default])
+will be appear on the next available empty 
+space according to the normal flow in the 
+parent, and these STATIC elements will 
+occupy or reserve space in page layout.
+
+-- The .div1 and .div2 (both are fixed)
+and they are also consecutive in markup flow
+so they will overlap in the webpage too.
+
+-- The .div3 and .div4 (both are static [default]).
+Although they are also consecutive in markup flow, 
+they will not overlap in the webpage.
+*/
+
+/* .div1, .div2 {
+    position: fixed;
+}
+
+.div3, .div4 {
+    position: static;
+}
+*/
+
+/* ==================================== */
+
+/*
+-- The .div1 and .div2 (both are static [default])
+will be appear on the next available empty 
+space according to the normal flow in the 
+parent, and these STATIC elements will 
+occupy or reserve space in page layout.
+
+-- The .div3 and .div4 (both are fixed)
+will be appear on the next available empty 
+space according to the normal flow in the 
+parent, however these FIXED elements will not 
+occupy or reserve any space in page layout.
+
+-- The .div1 and .div2 (both are static [default]).
+Although they are also consecutive in markup flow, 
+they will not overlap in the webpage.
+
+-- The .div3 and .div4 (both are fixed)
+and they are also consecutive in markup flow
+so they will overlap in the webpage too.
+*/
+
+/* .div1, .div2 {
+    position: static;
+}
+
+.div3, .div4 {
+    position: fixed;
+} */
+
+/* ==================================== */
+
+/*
+-- The .div1 and .div3 (both are fixed)
+will be appear on the next available empty 
+space according to the normal flow in the 
+parent, however these FIXED elements will not 
+occupy or reserve any space in page layout.
+
+-- The .div2 and .div4 (both are static [default])
+will be appear on the next available empty 
+space according to the normal flow in the 
+parent, and these STATIC elements will 
+occupy or reserve space in page layout.
+
+-- The .div1 and .div3 (both are fixed)
+and they are not consecutive in markup flow.
+Therefore they will be placed at their turn
+according to the markupflow and than they will 
+be apear on the next available empty 
+space according to the normal flow in the 
+parent. Therefore they
+will not overlap.
+
+-- The .div2 and .div4 (both are static [default]).
+They are not consecutive in markup flow, 
+they will not overlap in the webpage.
+*/
+
+/* .div1, .div3 {
+    position: fixed;    
+}
+
+.div2, .div4 {
+    position: static; 
+}
+*/
+
+/* ==================================== */
+
+/*
+-- The .div1 and .div3 (both are static [default])
+will be appear on the next available empty 
+space according to the normal flow in the 
+parent, and these STATIC elements will 
+occupy or reserve space in page layout.
+
+-- The .div2 and .div4 (both are fixed)
+will be appear on the next available empty 
+space according to the normal flow in the 
+parent, however these FIXED elements will not 
+occupy or reserve any space in page layout.
+
+-- The .div1 and .div3 (both are static [default]).
+They are not consecutive in markup flow, 
+they will not overlap in the webpage.
+
+-- The .div2 and .div4 (both are fixed)
+and they are not consecutive in markup flow.
+Therefore they will be placed at their turn
+according to the markupflow and than they will 
+be apear on the next available empty 
+space according to the normal flow in the 
+parent. Therefore they
+will not overlap.
+*/
+
+.div1,
+.div3 {
+  position: static;
+}
+
+.div2,
+.div4 {
+  position: fixed;
+}

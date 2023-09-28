@@ -1,0 +1,92 @@
+<!-- 
+*******************************************************
+Combinator Selectors and Specificity
+-------------------------------------------------------
+01-     Descendant Combinator (“ ”)
+02-     Child Combinator (>)
+03-     General/Subsequent Sibling Combinator (~)
+04-     Adjacent Sibling Combinator (+)
+05-     Column Combinator (||) - EXPRIMENTAL
+*******************************************************
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Combinator Selectors and Specificity</title>
+  </head>
+
+  <body>
+    <section id="mainsection" class="iamsection">
+      <h1>Heading One</h1>
+      <p>
+        Lorem ipsum dolor sit
+        <span
+          >Officia ab ipsum tempora sunt beatae ut vel aspernatur
+          voluptate.</span
+        >Quis labore enim, voluptatem
+        <span>provident laborum aspernatur</span> alias tempore.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+        sapiente eum, quos totam perferendis officiis. Repudiandae ad eum
+        suscipit magnam quis! Optio praesentium cum reprehenderit assumenda
+        accusamus quasi nemo et perspiciatis ipsum voluptate voluptatibus quos
+        quibusdam expedita, consequatur mollitia necessitatibus.
+      </p>
+
+      <h1>Heading Two</h1>
+      <div id="maincard" class="iamdiv">
+        <img src="./leaves-8223213_640.jpg" alt="leaves Image" width="400px" />
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed et
+          laboriosam ab voluptatum asperiores porro unde totam eius omnis. Iusto
+          suscipit eius nam optio in temporibus nobis ad molestiae consectetur.
+        </p>
+        <p>Lorem ipsum dolor sit amet..</p>
+      </div>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias,
+        repellat.
+      </p>
+      <a href="#top"> Go to top</a>
+    </section>
+
+    <hr />
+
+    <h1>Heading Three</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio perspiciatis
+      officia sapiente suscipit ratione alias quidem neque minus non temporibus
+      distinctio placeat natus sed consectetur laborum ipsa, iusto corporis
+      impedit!
+    </p>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis laudantium
+      a consequuntur, itaque voluptatibus, deserunt quaerat in ipsum quis
+      consequatur pariatur ut incidunt adipisci nemo vel cum officia, earum
+      fugiat!
+    </p>
+    <a href="#top"> Go to top</a>
+
+    <hr />
+    <section>
+      <h1>Heading Four</h1>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente earum
+        cupiditate molestiae sunt quidem facilis cumque accusantium qui? Eveniet
+        vel soluta quia dolores voluptates hic ea quas modi nisi sed.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, a.
+        Laudantium veniam, possimus, dolorum quo est deserunt corrupti ipsa
+        minus cupiditate laborum esse, doloremque illo inventore magni id unde
+        nemo?
+      </p>
+    </section>
+  </body>
+</html>

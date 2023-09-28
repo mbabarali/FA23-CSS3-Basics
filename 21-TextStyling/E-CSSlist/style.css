@@ -1,0 +1,12 @@
+.list1 {
+  list-style-position: inside;
+  list-style-type: circle;
+}
+
+.list2 {
+  list-style-image: url(./abc.svg);
+}
+
+.list3 {
+  list-style-image: linear-gradient(to left bottom, orange, green);
+}

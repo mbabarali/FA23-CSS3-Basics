@@ -1,0 +1,55 @@
+/* 
+Tree-structural pseudo-classes
+-------------------------- */
+:root {
+  font-size: 20px;
+}
+
+article:first-child {
+  color: green;
+}
+
+article:last-child {
+  color: orange;
+}
+
+/* nth-child(2n+1) where n=0,1,2, ...*/
+article:nth-child(odd) {
+  color: blueviolet;
+}
+
+/* article:nth-child(even) {
+    color: blueviolet;
+} */
+
+article:nth-child(-n + 3) {
+  /* first three */
+  color: palevioletred;
+}
+
+/* :nth-child(4) { 
+    vs. 
+    article:nth-child(4) */
+article:nth-child(4) {
+  /* 4th element */
+  color: blue;
+}
+
+article:nth-last-child(4) {
+  /* 4th element frm the last */
+  color: blue;
+}
+
+article:nth-last-child(-n + 3) {
+  /* first three */
+  color: green;
+}
+
+/* 
+:nth-child(-n + 3 of li.preffered) {
+    color: turquoise;
+}  */
+
+li.preffered:nth-child(-n + 3) {
+  color: turquoise;
+}

@@ -1,0 +1,15 @@
+:any-link {
+  color: blueviolet;
+}
+
+:link {
+  color: rgb(43, 226, 67);
+}
+
+:visited {
+  color: chocolate;
+}
+
+:target {
+  color: cornflowerblue;
+}

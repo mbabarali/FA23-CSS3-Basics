@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: gray;
+  padding: 10px;
+}
+
+body > * {
+  border: solid blue 2px;
+  background-color: aliceblue;
+  height: 5rem;
+}
+
+header {
+  grid-area: header;
+}
+
+div {
+  grid-area: featuredimage;
+}
+
+Nav {
+  grid-area: navigation;
+}
+
+main {
+  grid-area: maincontent;
+}
+
+.sideway {
+  grid-area: asidecontent;
+}
+
+.sidewayoptional {
+  grid-area: asidecontentoptional;
+}
+
+footer {
+  grid-area: footerarea;
+}
+
+.container {
+  display: grid;
+  gap: 5px;
+  /* grid-auto-flow: column; */
+  /* grid-template-columns: repeat(4, 1fr);  */
+  grid-template-areas:
+    "header "
+    "navigation "
+    "featuredimage"
+    "maincontent"
+    "asidecontent"
+    "asidecontentoptional"
+    "footerarea";
+}
+
+@media (min-width: 500px) {
+  .sideway {
+    height: auto;
+  }
+  .container {
+    display: grid;
+    gap: 5px;
+    grid-template-areas:
+      "header header header header header"
+      ".... navigation navigation asidecontent . "
+      ". featuredimage featuredimage asidecontent ."
+      ". maincontent  maincontent asidecontent ."
+      "asidecontentoptional asidecontentoptional asidecontentoptional asidecontentoptional asidecontentoptional"
+      "footerarea footerarea footerarea footerarea footerarea";
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .sideway,
+  .sidewayoptional {
+    height: auto;
+  }
+
+  .container {
+    display: grid;
+    gap: 5px;
+    grid-template-areas:
+      "header header header header header"
+      "..... asidecontentoptional navigation asidecontent . "
+      "..... asidecontentoptional featuredimage asidecontent ."
+      "..... asidecontentoptional  maincontent asidecontent ."
+      "footerarea footerarea footerarea footerarea footerarea";
+  }
+}

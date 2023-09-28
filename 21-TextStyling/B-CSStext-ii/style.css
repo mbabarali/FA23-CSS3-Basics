@@ -1,0 +1,80 @@
+.smallerContainer {
+  width: 40%;
+  margin: 0 auto;
+  border: 1px solid;
+}
+
+/* ------------------------------ */
+
+.taP1 {
+  /* text-align: left; [default] */
+  /* text-align: match-parent; */
+  /* text-align: right; */
+  /* text-align: center; */
+  text-align: justify;
+}
+
+.taP2 {
+  text-align: justify;
+  text-align-last: right;
+}
+
+.taP3 {
+  /* text-align: left; [default] */
+  text-align-last: center;
+}
+
+/* ------------------------------ */
+
+/* .tajP1, .tajP2, .tajP3 {
+    text-align: justify;
+} */
+
+.tajP1 {
+  text-align: justify;
+  text-justify: auto;
+}
+
+.tajP2 {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.tajP3 {
+  text-align: justify;
+  text-justify: inter-character;
+  /* Effective in Japanese and similar languages */
+}
+
+/* ------------------------------ */
+
+.tiP1 {
+  text-indent: 3em;
+}
+
+.tiP2 {
+  text-indent: -3em;
+}
+
+.tiP3 {
+  text-indent: 50%;
+  /* text-indent: 50% hanging each-line; */
+}
+
+/* ------------------------------ */
+
+.ttP1 {
+  text-transform: uppercase;
+}
+
+.ttP2 {
+  text-transform: lowercase;
+}
+
+.ttP3 {
+  text-transform: capitalize;
+}
+
+.ttP4 {
+  text-transform: none;
+}

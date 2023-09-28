@@ -1,0 +1,87 @@
+.heading1,
+.divheading1,
+.sectionheading1,
+.sectionsubheading1 {
+  color: blueviolet;
+}
+
+/* ================================================= */
+/*  Font size in Pixels
+    ===================
+    -- Uneffected by browser's appearance settings
+    -- Absolute font size
+    -- Breaks inheritance of the font-size value from parent element 
+    -- Used seldom by developers
+*/
+
+/* ----------------------- */
+
+.heading1 {
+  font-size: 50px;
+}
+
+.divheading1 {
+  font-size: 45px;
+}
+
+.sectionheading1 {
+  font-size: 40px;
+}
+
+.sectionsubheading1 {
+  font-size: 35px;
+}
+
+.p1 {
+  font-size: 20px;
+}
+
+/* ----------------------- */
+/* + [Restore Defaults in px] + */
+/* 
+.heading1 {
+    font-size: 32px;
+}
+
+.divheading1 {
+    font-size: 32px;
+}
+
+.sectionheading1 {
+    font-size: 24px;
+}
+
+.sectionsubheading1 {
+    font-size: 24px;
+}
+
+.p1 {
+    font-size: 16px;
+} 
+ */
+/* +++++++++++++++++++ */
+
+/* ----------------------- */
+/* + [Restore Defaults in em] + */
+/* 
+.heading1 {
+    font-size: 2em;
+}
+
+.divheading1 {
+    font-size: 2em;
+}
+
+.sectionheading1 {
+    font-size: 1.5em;
+}
+
+.sectionsubheading1 {
+    font-size: 1.5em;
+}
+
+.p1 {
+    font-size: 1em;
+} 
+ */
+/* +++++++++++++++++++ */

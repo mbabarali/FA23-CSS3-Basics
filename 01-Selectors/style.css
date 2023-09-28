@@ -1,0 +1,57 @@
+/* Type Selectors */
+
+h1 {
+  color: brown;
+}
+
+p {
+  color: blue;
+}
+
+/* Class Selectors */
+
+.subheadings {
+  color: yellowgreen;
+}
+
+/* ID Selectors */
+
+#ch1 {
+  font-size: 50px;
+}
+
+#p1 {
+  color: brown;
+}
+
+#p3 {
+  color: tomato;
+}
+
+/* Attribute Selectors */
+[class] {
+  color: crimson;
+}
+
+[class="subheadings"] {
+  /* just like: .subheading */
+  color: cadetblue;
+}
+
+[class^="sub"] {
+  color: blueviolet;
+}
+
+/* Universal Selector */
+* {
+  color: orange;
+  font-size: 12px;
+}
+
+*#ch1 {
+  color: blue;
+}
+
+*.subheadings {
+  color: blue;
+}

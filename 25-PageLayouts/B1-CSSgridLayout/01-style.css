@@ -1,0 +1,77 @@
+/* INTRODUCTION TO CSS GRID */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: gray;
+}
+
+body > * {
+  border: solid blue 2px;
+  background-color: aliceblue;
+  height: 5rem;
+  align-items: space-around;
+}
+
+/* .container {
+    display: flex;
+}
+
+.container {    
+    display: grid;
+    gap: 5px;
+    grid-template-columns: auto auto auto auto;    
+} 
+
+.container {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 10px 3fr 3fr 2fr 10px;
+    grid-template-rows: 1fr 3fr 3fr 2fr 1fr;
+}
+*/
+
+.container {
+  display: grid;
+  gap: 5px;
+  grid-template-columns: 10px 3fr 3fr 2fr 10px;
+  /* grid-template-rows: repeat(5, 1fr); */
+  /* grid-template-columns: repeat(5, minmax(100px, 300px)); */
+}
+
+header,
+nav,
+div,
+footer {
+  grid-column-start: 1;
+  grid-column-end: 6;
+}
+
+main {
+  grid-column: 2 / 4;
+}
+
+/* aside {
+    grid-column: 4 / 5;
+} */
+
+/* aside {
+    grid-column: 4;
+} */
+
+/* ------------------------------------ */
+nav,
+div {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.sideway {
+  grid-column-start: 4;
+  grid-row-start: 2;
+  grid-row-end: 5;
+}

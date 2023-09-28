@@ -1,0 +1,58 @@
+/* INTRODUCTION TO CSS GRID */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ++++ */
+body {
+  background-color: gray;
+  padding: 10px;
+}
+
+/* ++++ */
+body > * {
+  border: solid blue 2px;
+  background-color: aliceblue;
+  height: 5rem;
+  text-align: center;
+}
+
+.container {
+  display: grid;
+  gap: 5px;
+  grid-template-columns: 10px 3fr 3fr 2fr 10px;
+}
+
+header,
+footer {
+  grid-column-start: 1;
+  grid-column-end: 6;
+}
+
+main {
+  grid-column: 2 / 4;
+}
+
+/* ------------------------------------ */
+/* ++++ */
+nav,
+div {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+/* ++++ */
+.sideway {
+  height: auto;
+  grid-column-start: 4;
+  grid-row-start: 2;
+  grid-row-end: span 3;
+}
+
+/* ------------------------------------ */
+.container {
+  width: min(50%, 80rem);
+}

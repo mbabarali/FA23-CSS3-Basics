@@ -1,0 +1,32 @@
+input:autofill {
+  border-color: blue;
+}
+
+input:disabled {
+  background-color: cadetblue;
+}
+
+input:required {
+  background-color: aqua;
+}
+
+input:optional {
+  border-color: blueviolet;
+}
+
+input:invalid {
+  border-color: red;
+}
+
+input:read-only {
+  border: none;
+}
+
+textarea:read-only {
+  border: none;
+}
+
+textarea:read-write {
+  background-color: burlywood;
+  resize: none;
+}

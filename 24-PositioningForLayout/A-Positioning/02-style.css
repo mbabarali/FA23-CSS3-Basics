@@ -1,0 +1,263 @@
+* {
+  /* override defaults */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.thisisdiv {
+  border-bottom: ridge gray 10px;
+  border-left: navy solid 10px;
+  border-right: navy solid 10px;
+  border-top: navy 10px;
+  background-color: rgb(73, 168, 241);
+}
+
+.div2 {
+  border-left-color: orange;
+  border-right-color: orange;
+  background-color: rgb(128, 97, 40);
+}
+
+.div3 {
+  border-left-color: green;
+  border-right-color: green;
+  background-color: rgb(5, 236, 48);
+}
+
+.div4 {
+  border-left-color: rgba(234, 10, 10, 0.8);
+  border-right-color: rgba(234, 10, 10, 0.8);
+  background-color: rgba(244, 96, 96, 0.759);
+}
+
+.thisisdiv {
+  width: 200px;
+  height: 100px;
+}
+
+/* ==================================== */
+
+/* [Playgroud-Learning] - Start */
+.maindiv {
+  width: 80%;
+  height: 90%;
+  background-color: wheat;
+  margin: 10px auto;
+}
+
+.divexternal > .filler {
+  height: 3.5%;
+  background-color: orange;
+}
+
+.divexternal {
+  height: 96.5%;
+}
+
+.container > .filler {
+  height: 3.5%;
+  background-color: orangered;
+}
+
+.container {
+  width: 90%;
+  height: 90%;
+  border: solid rgb(5, 236, 48);
+}
+
+html,
+body {
+  height: 150%;
+  background-color: rgb(152, 152, 134);
+}
+/* [Playgroud-Learning] - End */
+
+/* VS. */
+
+/* [Playgroud-Practical] - Start */
+/* html,
+body {
+    height: 150%;
+    background-color: rgb(152, 152, 134);
+}
+
+.container {
+    width: 90%;
+    height: 90%;
+    border: solid rgb(5, 236, 48);
+}
+
+.container > .filler {
+    height: 3.5%;
+    background-color: orangered;
+}
+
+.divexternal {
+    height: 96.5%;
+}
+
+.divexternal > .filler {
+    height: 3.5%;
+    background-color: orange;
+}
+
+.maindiv {
+    width: 80%;
+    height: 90%;
+    background-color: wheat;
+    margin: 10px auto;
+} */
+/* [Playgroud-Practical] - End */
+
+/* ==================================== */
+
+/* 
+.thisisdiv {
+    position: static;  [Default]
+} 
+*/
+
+/* ------------------------------- */
+/* .div3 {
+    position: relative;
+} */
+
+/* .div3 {
+    position: relative;
+    margin: 0 auto;
+} */
+
+.div3 {
+  /* margin: 0 auto; */
+  position: relative;
+  top: 20px;
+  /* top: 50%; */
+  left: 50%;
+}
+
+/* ------------------------------- */
+/* .div1 {
+    position: absolute;
+} */
+
+.div1 {
+  position: absolute;
+  /* display: none; */
+  /* opacity: 0; */
+  /* visibility: hidden; */
+  bottom: 0%;
+  right: 5%;
+}
+
+/* ------------------------------- */
+/* .div2 {
+    position: fixed;
+} */
+
+.div2 {
+  position: fixed;
+  /* display: none; */
+  /* opacity: 0; */
+  /* bottom: 50%; */
+  bottom: 0;
+  left: 5%;
+
+  /* right: 50%; transform: translateX(+50%); */
+  /* or */
+  /* right: 38%; */
+
+  /* width: 100%;
+    left: 0;
+    bottom: 0; */
+}
+
+/* ------------------------------- */
+/* .div4 {
+    position: sticky;
+} */
+
+.div4 {
+  position: sticky;
+  top: 1%;
+  width: 100%;
+}
+
+/* ------------------------------- */
+.divexternal {
+  background-color: rgb(105, 31, 233);
+  /* What happens to .div1 with the following properties? */
+  /* 
+    position: relative; 
+    */
+}
+
+/* ---------------------- inset -------- */
+
+/* .div1 { */
+/* position: absolute; */
+/* inset: ; */
+/* } */
+
+/* ------------------------------- */
+
+.div1 {
+  bottom: 30%;
+  right: 5%;
+}
+
+/* ---------------width:auto with both left and right ---------------- */
+/* 
+.div1 {
+    width: auto;
+    left: 0;
+    right: 0;
+}
+
+.div2 {
+    width: auto;
+    left: 0;
+    right: 0;
+}
+ */
+
+/* 
+.div3 {
+    width: auto;
+    left: 0;
+    right: 0;
+}
+
+.div4 {
+    width: auto;
+    left: 0;
+    right: 0;
+}
+ */
+
+/* ---------------height:auto with both top and bottom ---------------- */
+/* ------ For absolutely positioned elements (absolute and fixed) ----- */
+
+/* .div1 {
+    height: auto;
+    top: 0;
+    bottom: 0;
+}
+
+.div2 {
+    height: auto;
+    top: 0;
+    bottom: 0;
+} */
+
+/* .div3 {
+    height: auto;
+    top: 0;
+    bottom: 0;
+} 
+
+.div4 {
+    height: auto;
+    top: 0;
+    bottom: 0;
+} */

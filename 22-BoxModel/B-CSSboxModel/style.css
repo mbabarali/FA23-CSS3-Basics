@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  width: 500px;
+}
+
+.thisisdiv {
+  /* width: 500px; */
+  width: 100%;
+  height: 100px;
+  background-color: turquoise;
+}
+
+.thisisdiv {
+  border-bottom: ridge gray 10px;
+  border-left: navy solid 10px;
+  border-right: navy solid 10px;
+}
+
+.div2 {
+  border-left-color: orange;
+  border-right-color: orange;
+  background-color: rgb(80, 133, 135);
+}
+
+.div3 {
+  border-left-color: green;
+  border-right-color: green;
+  background-color: rgb(26, 157, 239);
+}
+
+/* -------------- PROBLEM ----------------- */
+.div1 {
+  /* --- EXTRA PADDING PROBLEM --- */
+  /* padding: 0 20px; */
+  /* vs.  */
+  padding: 0 100px;
+  /* Padding value where x-axis scrol appears
+    which is mostly undesireable*/
+
+  /* OR */
+  /* --- EXTRA BORDER PROBLEM --- */
+  /* When aading borders */
+
+  /* OR */
+  /* --- EXTRA MARGIN PROBLEM --- */
+  /* margin: 0 200px; */
+}
+
+/* --------------- REASON ---------------- */
+* {
+  /* Default Settings */
+  box-sizing: content-box;
+}
+
+/* --------------- REMEDY EXTRA PADDING or BORDER --- */
+* {
+  /* --- SOLUTION to EXTRA PADDING or BORDER PROBLEM --- */
+  /* Override Settings */
+  box-sizing: border-box;
+}
+
+/* --------------- NOW ------------------- */
+.div1 {
+  /* Solved */
+  padding: 0 100px;
+}
+
+/* [====LOGIC-PROBLEM-START====] */
+/* --------------- REMEDY EXTRA PADDING or MARGIN ---------------- */
+/* NOTE:
+    box-sizing: padding-box; OR box-sizing: margin-box;
+    do not work correctly on chrome
+*/
+/* * { */
+/* --- SOLUTION to EXTRA PADDING or BORDER PROBLEM --- */
+/* Override Settings */
+/* box-sizing: margin-box; */
+/* OR */
+/* box-sizing: padding-box; */
+/* } */
+
+/* --------------- NOW ------------------- */
+/* .div2 { */
+/* margin-left: 10px; */
+/* } */
+/* [====LOGIC-PROBLEM-END====] */
+
+/* --------------- Centring the Element --- */
+h1 {
+  /* width: 500px; */
+  /* vs. */
+  width: 200px;
+
+  /* margin: 20px; */
+  /* vs.  */
+  margin: 0 auto;
+}
+
+.thisisdiv {
+  width: 500px;
+
+  /* margin: 10px; */
+  /* vs. */
+  margin: 10px auto;
+}

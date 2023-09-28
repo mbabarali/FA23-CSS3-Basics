@@ -1,0 +1,63 @@
+<!-- 
+*******************************************************
+Pseudo-class Selectors
+-------------------------------------------------------
+            A-     User action pseudo-classes
+            B-     Tree-structural pseudo-classes
+            C-     Location pseudo-classes
+D-     Input pseudo-classes
+            E-     Element display state pseudo-classes
+            F-     Resource state pseudo-classes
+            G-     Time-dimensional pseudo-classes
+            H-     Linguistic pseudo-classes
+            I-     Functional pseudo-classes
+*******************************************************
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Pseudo-class Selectors</title>
+  </head>
+
+  <body>
+    <h1>Autofill</h1>
+    Name: <input type="text" name="name" autocomplete="name" /> Tel:
+    <input type="tel" name="tel" autocomplete="tel" />
+
+    <h1>Disabled/Enabled</h1>
+    Last Name:
+    <input type="text" name="name" autocomplete="name" disabled /> Tel:
+    <input type="tel" name="tel" autocomplete="tel" /> Route:
+    <select disabled>
+      <option value="1">01</option>
+      <option value="2">02</option>
+    </select>
+    <br />
+    Email: <input type="email" required /> DOB: <input type="date" disabled />
+
+    <h1>Valid/Invalid</h1>
+    ABC: <input type="text" name="abc" pattern="[a-z]" />
+
+    <hr />
+
+    <h1>Read-only/Read-write</h1>
+
+    <div>
+      Name: <input type="text" value="Ali" readonly /> Comment:
+      <textarea rows="5" cols="20" readonly>
+ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro, hic!</textarea
+      >
+    </div>
+    <div>
+      Do you want to submit your comment? <input type="checkbox" />
+
+      Additional Remarks: <textarea cols="30" rows="5"></textarea>
+    </div>
+
+    <button type="submit" disabled>Submit</button>
+  </body>
+</html>

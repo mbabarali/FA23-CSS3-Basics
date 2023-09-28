@@ -1,0 +1,35 @@
+/* Descendant Combinator (“ ”) */
+
+section p {
+  color: red;
+}
+
+section h1 {
+  color: yellowgreen;
+}
+
+#mainsection p {
+  color: seagreen;
+}
+
+.iamsection p {
+  color: aqua;
+}
+
+/* Child Combinator (>) */
+
+section > p {
+  color: cornflowerblue;
+}
+
+/* General/Subsequent Sibling Combinator (~) */
+
+section ~ p {
+  color: brown;
+}
+
+/* Adjacent Sibling Combinator (+) */
+
+h1 + p {
+  color: slategray;
+}

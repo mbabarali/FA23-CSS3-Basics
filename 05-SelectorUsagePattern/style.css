@@ -1,0 +1,23 @@
+li.colorit {
+  color: aquamarine;
+}
+
+.colorit:hover {
+  color: blueviolet;
+}
+
+/* Complex Selectors */
+.colorit ul > li:nth-child(3) {
+  font-size: 20px;
+}
+
+section ~ article p {
+  color: tomato;
+}
+
+/* Group Selectors */
+
+p,
+h2 {
+  font-size: large;
+}

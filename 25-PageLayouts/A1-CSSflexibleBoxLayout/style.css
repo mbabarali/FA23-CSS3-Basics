@@ -1,0 +1,256 @@
+* {
+  /* override defaults */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.thisisdiv {
+  border-bottom: ridge gray 10px;
+  border-left: navy solid 10px;
+  border-right: navy solid 10px;
+  /* border-top: navy 10px; */
+  background-color: rgb(73, 168, 241);
+}
+
+.div2 {
+  border-left-color: orange;
+  border-right-color: orange;
+  background-color: rgb(128, 97, 40);
+}
+
+.div3 {
+  border-left-color: green;
+  border-right-color: green;
+  background-color: rgb(5, 236, 48);
+}
+
+.div4 {
+  border-left-color: rgba(234, 10, 10, 0.8);
+  border-right-color: rgba(234, 10, 10, 0.8);
+  background-color: rgba(244, 96, 96, 0.759);
+}
+
+/* ==================================== */
+
+.div1,
+.div2,
+.div3,
+.div4 {
+  /* display: block; */
+  /* display: none; */
+  /* display: contents; */
+  display: inline-block;
+
+  /* width: min-content; [PROBLEM] */
+  /* width: 10%; [PROBLEM] */
+  width: max-content;
+  height: 200px;
+
+  /* NOT FLEXIBLE */
+
+  /* + [Restore Defaults] + */
+  display: block;
+  width: auto;
+  height: auto;
+  /* +++++++++++++++++++ */
+}
+
+/* ---------- Flex Container ----------*/
+.maindiv {
+  display: flex;
+}
+
+/* ---------- width and height ----------*/
+.maindiv {
+  /* width: min-content;  */
+  /* width: max-content;  */
+  width: 50%;
+
+  /* + [Restore Defaults] + */
+  width: auto;
+}
+
+.thisisdiv {
+  /* width: max-content; */
+  /* width: min-content; */
+  width: 200px;
+
+  /* FLEXIBLE: Flex Item */
+
+  /* + [Restore Defaults] + */
+  width: auto;
+  height: auto;
+  /* +++++++++++++++++++ */
+}
+
+/* ------------- flex-basis 
+                    and
+              flex-direction -------------*/
+
+.maindiv {
+  /* flex-basis: min-content; */
+  /* flex-basis: max-content; */
+  /* flex-basis: 50%; */
+
+  /* flex-basis has NO IMPACT on Flex Container */
+
+  /* flex-direction: row; */
+  flex-direction: column;
+
+  /* + [Restore Defaults] + */
+  flex-direction: row;
+}
+
+.thisisdiv {
+  /* flex-basis: max-content; */
+  /* flex-basis: min-content; */
+  /* flex-basis: 200px; */
+
+  flex-basis: 200px;
+  /* vs. */
+  width: 100px;
+  height: 150px;
+
+  /* FLEXIBLE: Flex Item */
+
+  /* + [Restore Defaults] + */
+  flex-basis: auto;
+  width: auto;
+  height: auto;
+  /* +++++++++++++++++++ */
+}
+
+/* ------------- flex-shrink -------------*/
+.div2,
+.div4 {
+  /* width: max-content;  */
+  flex-basis: 200px;
+  flex-shrink: 0;
+
+  /* + [Restore Defaults] + */
+  width: auto;
+  height: auto;
+  flex-basis: auto;
+  flex-shrink: 1;
+  /* +++++++++++++++++++ */
+}
+
+.div1,
+.div3 {
+  /* flex-shrink: 0; */
+
+  /* [Default] */
+  flex-shrink: 1;
+}
+
+/* ------------- flex-wrap -------------*/
+.thisisdiv {
+  flex-basis: 50%;
+
+  /* + [Restore Defaults] + */
+  flex-basis: auto;
+}
+
+.maindiv {
+  flex-wrap: wrap;
+
+  /* + [Restore Defaults] + */
+  flex-wrap: nowrap;
+}
+
+/* ------------- flex-direction -------------*/
+.div2,
+.div3 {
+  /* width: 500px; */
+  /* vs. */
+  flex-basis: 250px;
+
+  /* FLIXIBLE */
+
+  /* + [Restore Defaults] + */
+  width: auto;
+  flex-basis: auto;
+  /* +++++++++++++++++++ */
+}
+
+.maindiv {
+  flex-direction: column;
+
+  /* + [Restore Defaults] + */
+  flex-direction: row;
+}
+
+/* ------------- flex-flow (shorthand) -------------*/
+.maindiv {
+  flex-flow: row wrap;
+
+  /* + [Restore Defaults] + */
+  flex-flow: row nowrap;
+}
+
+/* ------------- flex-grow -------------*/
+.thisisdiv {
+  flex-basis: 100px;
+}
+
+.div1 {
+  flex-grow: 0;
+}
+
+.div2 {
+  flex-grow: 1;
+}
+
+.div3 {
+  flex-grow: 2;
+}
+
+.div4 {
+  flex-grow: 2;
+}
+
+.thisisdiv {
+  /* + [Restore Defaults] + */
+  flex-basis: auto;
+  flex-grow: 0;
+  /* +++++++++++++++++++ */
+}
+
+/* ------------- flex (shorthand) -------------*/
+
+.div2,
+.div3 {
+  /* grow shrink basis */
+  flex: 0 1 300px;
+}
+
+.div1,
+.div4 {
+  /* grow shrink basis */
+  flex: 1 0 100px;
+}
+
+.thisisdiv {
+  /* + [Restore Defaults] + */
+  /* grow shrink basis */
+  flex: 0 1 auto;
+  /* +++++++++++++++++++ */
+}
+
+/* ------------- order -------------*/
+/* .div1 {
+    order: 2;
+}
+
+.div3 {
+    order: 0;
+} */
+
+/* ------------- order -------------*/
+.maindiv {
+  gap: 50px 100px;
+  /* row-gap: 50px; */
+  /* column-gap: 100px; */
+  flex-wrap: wrap;
+}

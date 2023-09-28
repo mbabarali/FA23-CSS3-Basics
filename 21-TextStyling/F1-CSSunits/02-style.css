@@ -1,0 +1,169 @@
+.heading1,
+.divheading1,
+.sectionheading1,
+.sectionsubheading1 {
+  color: blueviolet;
+}
+
+/* ================================================= */
+
+/*  Font size in em
+    ===============
+    -- Effected by browser's appearance settings 
+    -- Relative font size
+    -- Relative value based on inheritance: 
+            n em = (parent's font-size value) x n
+    -- Default units in "Useragent stylesheet"
+    -- Used seldom by developers
+*/
+
+/* ----------------------- */
+/* [Default] Default by UA stylesheet */
+/* html {
+    font-size: 16px;
+} */
+
+/* [Default] */
+/* section {
+    font-size: 1em;
+} */
+
+/*  CSS rule recommended with em units for 
+    browser compatibility in font sizes */
+/* body {
+    font-size: 100%;
+} */
+
+/* 
+.heading1 {
+    font-size: 1em;
+}
+
+.divheading1 {
+    font-size: 1em;
+}
+
+.sectionheading1 {
+    font-size: 1em;
+}
+
+.sectionsubheading1 {
+    font-size: 1em;
+}
+
+.p1 {
+    font-size: 1em;
+} 
+ */
+
+/* 
+.heading1 {
+    font-size: 1.5em;
+}
+
+.divheading1 {
+    font-size: 1.5em;
+}
+
+.sectionheading1 {
+    font-size: 1.5em;
+}
+
+.sectionsubheading1 {
+    font-size: 1.5em;
+}
+
+.p1 {
+    font-size: 1.5em;
+}  
+*/
+
+/* 
+section {
+    font-size: 1.5em;
+}
+ 
+.heading1 {
+    font-size: 1em;
+}
+
+.divheading1 {
+    font-size: 1em;
+}
+
+.sectionheading1 {
+    font-size: 1em;
+}
+
+.p1 {
+    font-size: 1em;
+}
+ */
+
+/* + [Restore Defaults in px] + */
+/* 
+section {
+    font-size: 1em;
+}
+ 
+.heading1 {
+    font-size: 2em;
+}
+
+.divheading1 {
+    font-size: 2em;
+}
+
+.sectionheading1 {
+    font-size: 1.5em;
+}
+
+.p1 {
+    font-size: 1em;
+}
+ */
+/* +++++++++++++++++++ */
+
+/* ----------------------- */
+
+/* Default by UA stylesheet*/
+/* font-size: 16px; */
+/* vs. */
+/* 62.5% ==> font-size: 10px*/
+/* font-size: 62.5%; */
+
+html {
+  font-size: 62.5%;
+}
+
+/*  CSS rule recommended with em units for 
+    browser compatibility in font sizes */
+body {
+  font-size: 100%;
+}
+
+/* font-size: 16px; */
+/* Breaks inheritance */
+/* vs */
+/* font-size: 24px; */
+/* Breaks inheritance */
+/* vs */
+/* font-size: 1em; */
+/* parent[font-size] x 1 */
+/* vs */
+/* font-size: 2em; */
+/* parent[font-size] x 2 */
+
+div {
+  font-size: 2em;
+}
+
+/* margin: 1em; */
+/* current[font-size] x 1 */
+/* vs. */
+/* margin: 1.5em; */
+/* current[font-size] x 1.5 */
+
+div {
+  margin: 1.5em;
+}

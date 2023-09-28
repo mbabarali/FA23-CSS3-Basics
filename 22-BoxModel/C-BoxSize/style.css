@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.thisisdiv {
+  background-color: turquoise;
+  border-bottom: ridge gray 10px;
+  border-left: navy solid 10px;
+  border-right: navy solid 10px;
+}
+
+.div2 {
+  border-left-color: orange;
+  border-right-color: orange;
+  background-color: rgb(80, 133, 135);
+}
+
+.div3 {
+  border-left-color: green;
+  border-right-color: green;
+  background-color: rgb(26, 157, 239);
+}
+/* ======================================== */
+/* ==========  width, height  ============= */
+/* ======================================== */
+/* 
+.div1 {
+    width: max-content;
+}
+
+.div2 {
+
+    width: max-content;
+}
+
+.div3 {
+    width: max-content;
+}
+ */
+
+/* ======================================== */
+
+/* 
+.div1 {
+    width: min-content;
+}
+
+.div2 {
+
+    width: fit-content;
+}
+
+.div3 {
+    width: min-content;
+}
+ */
+
+/* ======================================== */
+
+/* 
+.div1 {
+    width: min-content;
+    height: max-content;
+}
+
+.div2 {
+
+    width: fit-content;
+    height: max-content;
+}
+
+.div3 {
+    width: min-content;
+    height: max-content;
+    height: fit-content;
+    height: min-content;
+}
+ */
+
+/* ======================================== */
+/* =======  min-width, max-width  ========= */
+/* ======= min-height, max-height ========= */
+/* ======================================== */
+
+/* 
+.div1 {
+    max-width: min-content;
+}
+
+.div2 {
+    max-width: min-content;
+}
+
+.div3 {
+    max-width: min-content;
+}
+  */
+
+/* ======================================== */
+
+/* 
+.div1 {
+    min-width: min-content;
+}
+
+.div2 {
+    min-width: min-content;
+}
+
+.div3 {
+    min-width: min-content;
+}
+ */
+
+/* ======================================== */
+
+/* 
+.div1 {
+    min-width: max-content;
+}
+
+.div2 {
+    min-width: max-content;
+}
+
+.div3 {
+    min-width: max-content;
+}
+ */
+
+/* ======================================== */
+
+/* 
+.div1 {
+    min-height: fit-content;
+}
+
+.div2 {
+    min-height: fit-content;
+}
+
+.div3 {
+    min-height: fit-content;
+} */
+
+/* ======================================== */
+/* ==========  min(), max()  ============== */
+/* ======================================== */
+
+.div1 {
+  width: min(50%, 250px);
+}
+
+.div2 {
+  width: max(50%, 250px);
+}
+
+/* .div3 {
+    width: min();
+} */

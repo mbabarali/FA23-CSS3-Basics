@@ -1,0 +1,59 @@
+.p1 {
+  letter-spacing: 2px;
+}
+
+.p2 {
+  /* letter-spacing: 0px; [default, normal]*/
+  letter-spacing: normal;
+  /* word-spacing: 0px; [default, normal] */
+  word-spacing: normal;
+}
+
+.p3 {
+  letter-spacing: -1px;
+}
+
+.p4 {
+  letter-spacing: 4px;
+  word-spacing: 6px;
+}
+
+/* --------------------------- */
+
+.smallContainer {
+  width: 25%;
+  margin: 0 auto;
+  border: 1px solid;
+}
+
+.breakP1 {
+  word-break: normal;
+}
+
+.breakP2 {
+  word-break: break-all;
+}
+
+.breakP3 {
+  word-break: keep-all;
+}
+
+/* --------------------------- */
+
+.smallerContainer {
+  width: 25%;
+  margin: 0 auto;
+  border: 1px solid;
+}
+
+.owP1 {
+  overflow-wrap: normal;
+}
+
+.owP2 {
+  overflow-wrap: break-word;
+}
+
+/* .owP3 {
+    overflow-wrap: anywhere;
+} */
